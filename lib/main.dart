@@ -20,9 +20,21 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Welcome to Flutter'),
+          actions: [
+            IconButton(
+              icon: Icon(Icons.search),
+              tooltip: 'Search',
+              onPressed: null,
+            )
+          ]
         ),
         body: const Center(
           child: RandomWords()
+        ),
+        floatingActionButton: const FloatingActionButton(
+          tooltip: 'Add',
+          onPressed: null,
+          child: Icon(Icons.add)
         ),
       ),
     );
